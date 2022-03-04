@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <button onclick="onRollD6ButtonClicked()">Roll D6</button>
+  <p id="result">Roll: ##</p>
+
+  <script>
+    // Returns a number between 0 and "max" (exclusive)
+    console.log("Hello World!")
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * max)
+    }
+    //Returns a number between 1 and "sides" (Inclusive)
+    function rollDice(sides) {
+      return getRandomInt(sides) + 1
+    }
+
+
+
+  </script>
+
+  <script>
+    //Displays rollDice result on screen
+    function onRollD6ButtonClicked() {
+      resultElement = document.getElementById("result")
+      resultElement.innerHTML = rollDice(6)
+
+    }
+  </script>
+</body>
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <button onclick="onRollD6ButtonClicked()">Roll D6</button>
+  <p id="result">Roll: ##</p>
+
+  <script>
+    // Returns a number between 0 and "max" (exclusive)
+    console.log("Hello World!")
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * max)
+    }
+    //Returns a number between 1 and "sides" (Inclusive)
+    function rollDice(sides) {
+      return getRandomInt(sides) + 1
+    }
+
+
+
+  </script>
+
+  <script>
+    //Displays rollDice result on screen
+    function onRollD6ButtonClicked() {
+      resultElement = document.getElementById("result")
+      resultElement.innerHTML = rollDice(6)
+
+    }
+  </script>
+</body>
+
+</html>
