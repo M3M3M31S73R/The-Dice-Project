@@ -2,7 +2,12 @@
 <html>
 
 <body>
+  <button onclick="onRollD4ButtonClicked()">Roll D4</button>
   <button onclick="onRollD6ButtonClicked()">Roll D6</button>
+  <button onclick="onRollD8ButtonClicked()">Roll D8</button>
+  <button onclick="onRollD10ButtonClicked()">Roll D10</button>
+  <button onclick="onRollD12ButtonClicked()">Roll D12</button>
+  <button onclick="onRollD20ButtonClicked()">Roll D20</button>
   <p id="result">Roll: ##</p>
 
   <script>
@@ -18,10 +23,35 @@
   </script>
 
   <script>
-    // Displays rollDice result on screen.
+    // Rolls and displays the D4 dice.
+    function onRollD4ButtonClicked() {
+      resultElement = document.getElementById("result")
+      resultElement.innerHTML = rollDice(4)
+    }
+    // Rolls and displays the D6 dice.
     function onRollD6ButtonClicked() {
       resultElement = document.getElementById("result")
       resultElement.innerHTML = rollDice(6)
+    }
+    // Rolls and displays the D8 dice.
+    function onRollD8ButtonClicked() {
+      resultElement = document.getElementById("result")
+      resultElement.innerHTML = rollDice(8)
+    }
+    // Rolls and displays the D10 dice.
+    function onRollD10ButtonClicked() {
+      resultElement = document.getElementById("result")
+      resultElement.innerHTML = rollDice(10)
+    }
+    // Rolls and displays the D12 dice.
+    function onRollD12ButtonClicked() {
+      resultElement = document.getElementById("result")
+      resultElement.innerHTML = rollDice(12)
+    }
+    // Rolls and displays the D20 dice.
+    function onRollD20ButtonClicked() {
+      resultElement = document.getElementById("result")
+      resultElement.innerHTML = rollDice(20)
     }
   </script>
 </body>
